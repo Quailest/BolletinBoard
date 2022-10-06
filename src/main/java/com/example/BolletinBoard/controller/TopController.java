@@ -13,4 +13,11 @@ public class TopController {
         mav.setViewName("/top");
         return mav;
     }
+
+    @GetMapping
+    public ModelAndView newArticle() {
+        ModelAndView mav = new ModelAndView();
+        mav.setViewName("/new");
+        return mav;
+    }
 }
